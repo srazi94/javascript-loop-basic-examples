@@ -7,7 +7,13 @@
   <body>
     <h1>Javascript Loop!</h1>
     <script>
-
+      let pObj = {id:1,name:"Sajjad",mobileNo:9939319722};
+      console.log(Object.keys(pObj));
+      console.log(Object.values(pObj));
+      console.log(Object.entries(pObj));
+      for(let [key,value] of Object.entries(pObj)){
+        console.log(`${key} ${value}`);
+      }
       //for loop
       for(let i=0; i < 10; i++){
         console.log(i);
